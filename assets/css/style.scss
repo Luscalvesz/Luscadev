@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: lato;
+
+}
+
+$vermelho: #C80F0E;
+$preto: #000;
+$branco: #fff;
+$azul: #1400FF;
+$roxo: #CC1DD0;
+
+body{
+    background: $preto;
+}
+
+// Inicio header
+.header{
+    position: fixed;
+    width: 100%;
+    background: $preto;
+    z-index: 5;
+    &-nav{
+        // background-color: $preto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        &-text{
+            color: $branco;
+            margin: 0 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 5px 20px;
+            letter-spacing: 2px;
+            &:hover{
+                background-color: $branco;
+                color: $preto;
+                border-radius: 20px;
+                transition: 0.5s;
+
+            }
+        }
+        &-img{
+            margin: 0 50px;
+        }
+    }
+}
+
+// Inicio main
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
+    &-social{
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        &-icon{
+            width: 45px;
+            margin: 0 5px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+        &:after{
+            content: "______________________";
+            color: white;
+            letter-spacing: -1px;
+            position: relative;
+            bottom: 20px;
+            margin-left: 10px;
+        }
+    }
+    &-title{
+        font-size: 50px;
+        color: $branco;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        bottom: 50px;
+        cursor: default;
+
+    }
+    &-subtitle{
+        font-size: 20px;
+        color: $branco;
+        position: relative;
+        bottom: 20px;
+        cursor: default;
+    }
+}
+
+
+//Inicio conteudo
+.sobre, .exp, .proj, .ctto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+    &-title{
+        color: $branco;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        cursor: default;
+        &:hover{
+            letter-spacing: 10px;
+        }
+    }
+    &-icon{
+        margin-bottom: 10px;
+        width: 50px;
+    }
+    &-text{
+        color: $branco;
+        text-align: center;
+        line-height: 25px;
+        margin: 50px 0;
+    }
+    // carrossel de projetos
+    &-carousel{
+        width: 50%;
+        text-align: -webkit-center;
+        align-items: center;
+        .slick-prev{
+            font-size: 0;
+            background: url(../imgs/icon-setaE.png) no-repeat;
+            background-position: center;
+            height: 65px;
+            width: 185px;
+            border: none;
+            cursor: pointer;
+            transition: 0.5s;
+            position: relative;
+            right: 10px;
+            outline: none;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        .slick-next{
+            font-size: 0;
+            background: url(../imgs/icon-setaD.png) no-repeat;
+            background-position: center;
+            height: 65px;
+            width: 185px;
+            border: none;
+            cursor: pointer;
+            transition: 0.5s;
+            position: relative;
+            left: 10px;
+            outline: none;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        &-slide{
+
+            &-img{
+                height: 275px;
+            }
+            &-title{
+                color: $branco;
+                letter-spacing: 5px;
+                font-size: 25px;
+                margin: 15px 0;
+                font-weight: 300;
+            }
+            &-description{
+                color: $branco;
+                letter-spacing: 3px;
+                font-size: 15px;
+                font-weight: 300;
+                padding-bottom: 20px;      
+            }
+            &-link{
+                margin-top: 15px;
+                border: none;
+                background: $branco;
+                padding: 4px 10px;
+                border-radius: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: 0.5s;
+                position: relative;
+                top: 15px;
+                color: $preto;
+                font-weight: 500;
+                outline: none;
+                text-decoration-line: none;
+                cursor: pointer;
+                
+                &:hover{
+                    letter-spacing: 3px;
+                }
+            }
+        }
+
+    }
+    //formulário de contato
+    &-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-item{
+            width: 350px;
+            padding: 5px 0 5px 5px;
+            margin: 10px 0;
+            border: none;
+            &-msg{
+                width: 350px;
+                padding-left: 5px;
+                height: 75px;
+                margin-bottom: 25px;
+            }
+            &-button{
+                padding: 5px 15px;
+                background: $branco;
+                border: 1px solid $branco;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+                font-weight: 600;
+                &:hover{
+                    letter-spacing: 5px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+// Inicio experiência
+// .exp{
+
+//     &-icon{
+
+
+//     }
+//     &-title{
+//         color: $branco;
+//     }
+// }
+
+
+
+
+
+
+
+//Inicio footer
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0;
+    &-text{
+        color: $branco;
+        &-link{
+            color: $branco;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+
+// scroll bar
+::-webkit-scrollbar {
+    width: 6px;
+    &-track{
+        background: $preto; 
+    }
+    &-thumb{
+        background: $branco;
+        transition: 1.5s;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luscadev</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+
+</head>
+<body>
+    <!-- Inicio header -->
+    <header class="header">
+        <nav class="header-nav">
+            <a class="header-nav-text" href="#" onclick="scrollToElement()">sobre</a>
+            <a class="header-nav-text" href="#" onclick="scrollToElement()">experiência</a>
+            <a href="#"><img class="header-nav-img" src="assets/imgs/logo-LuscaDev.png" alt="logo" onclick="scrollToElement()"></a>
+            <a class="header-nav-text" href="#" onclick="scrollToElement()">projetos </a>
+            <a class="header-nav-text" href="#" onclick="scrollToElement()">contato</a>
+        </nav>
+    </header>
+
+    <!-- Inicio main -->
+    <section class="main">
+        <span id="main-scroll"></span>
+        <h1 class="main-title">lucas alves pereira</h1>
+        <p class="main-subtitle">Desenvolvedor Front End</p>
+        <div class="main-social">
+            <a href="https://www.linkedin.com/in/lucas-alves-pereira/" target="_blank"><img class="main-social-icon" src="assets/imgs/icon-linkedin.png" alt=""></a>
+            <a href="https://github.com/Luscalvesz" target="_blank"><img class="main-social-icon" src="assets/imgs/icon-github.png" alt=""></a>
+        </div>
+    </section>
+
+    <!-- Inicio sobre-->
+    <section class="sobre">
+        <span id="sobre-scroll"></span>
+        <img class="sobre-icon" src="assets/imgs/icon-sobre.png" alt="">
+        <h3 class="sobre-title">Sobre</h3>
+        <p class="sobre-text">Paulista, 20 Anos.<br>
+            Amante de gatos, comida de mãe, FPS e de códigos bem indentados.<br>
+            Tô sempre buscando melhorar minhas habilidades como Desenvolvedor.<br>
+            Não importa o que aconteça, jamais vou desistir do meu sonho.<br>
+            Tô certo!
+        </p>
+
+        <p class="sobre-html"></p>
+        <p class="sobre-css"></p>
+        <p class="sobre-javascript"></p>
+        <p class="sobre-csgo"></p>
+    </section>
+
+    <!-- Inicio experiência-->
+    <section class="exp">
+        <span id="exp-scroll"></span>
+        <img class="exp-icon" src="assets/imgs/icon-diploma.png" alt="">
+        <h3 class="exp-title">Experiência</h3>
+        <p class="exp-text">
+            Atuando como Desenvolvedor Front End,<br>
+            Adquiri experiência em HTML, CSS, JavaScript, Jquery, Git e plataforma VTEX,<br> 
+            Também possuo familiaridade com alguns conceitos de metodologias ágeis.<br>
+             
+        </p>
+    </section>
+
+    <!-- Inicio projetos-->
+    <section class="proj">
+        <span id="proj-scroll"></span>
+        <img class="proj-icon" src="assets/imgs/icon-projetos.png" alt="">
+        <h3 class="proj-title">Projetos</h3>
+        <p class="proj-text">
+            Alguns dos projetos que participei ao longo dessa jornada como desenvolvedor : )              
+        </p>
+        <ul class="proj-carousel">
+            <li class="proj-carousel-slide">
+                <img class="proj-carousel-slide-img" src="assets/imgs/EOL4US.png" alt="">
+                <h4 class="proj-carousel-slide-title">EOL4US</h4>
+                <p class="proj-carousel-slide-description">
+                    Projeto de conclusão do curso CODE XP, <br>
+                    da escola SENAI de informática.<br>
+                    veja mais no<br>
+                    <a href="https://github.com/Luscalvesz/projeto-eol" target="_blank" class="proj-carousel-slide-link">repositório</a>
+                </p>
+                
+            </li>
+            <li class="proj-carousel-slide">
+                <img class="proj-carousel-slide-img" src="assets/imgs/MIONA.png" alt="">
+                <h4 class="proj-carousel-slide-title">MIONA</h4>
+                <p class="proj-carousel-slide-description">
+                    Uma vitrine,<br> 
+                    feita exclsivavente para mostrar os meus gatos :)<br>
+                    veja mais no:<br>
+                    <a href="https://github.com/Luscalvesz/MIONA" target="_blank" class="proj-carousel-slide-link">repositório</a>
+                </p>
+                
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Inicio contato-->
+    <section class="ctto">
+        <span id="ctto-scroll"></span>
+        <img class="ctto-icon" src="assets/imgs/icon-email.png" alt="">
+        <h3 class="ctto-title">Contato</h3>
+        <p class="ctto-text">
+            Dúvidas? Projetos?<br>
+            Preencha os campos abaixo e entre em contato! 
+        </p>
+        <form class="ctto-form" action="">
+            <input class="ctto-form-item" type="email" name="email" id="" placeholder="E-mail">
+            <textarea class="ctto-form-item-msg" name="msg" id="mensagem" placeholder="Mensagem" ></textarea>
+            <input class="ctto-form-item-button" type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Inicio footer -->
+    <footer class="footer">
+        <p class="footer-text">Desenvolvido por <a class="footer-text-link" href="#">Luscadev</a></p>
+        <p class="footer-text">2020</p>
+    </footer>
+
+
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/functions.js"></script>
+</body>
+</html>
