@@ -17,6 +17,22 @@ function carousel(){
         slidesToShow: 1,
         slidesToScroll: 1,
     })
+
+    $('.drawBox-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.draw-carousel'
+    });
+    $('.draw-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.drawBox-carousel',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
 };
 
 
