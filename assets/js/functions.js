@@ -18,17 +18,17 @@ function carousel(){
         slidesToScroll: 1,
     })
 
-    $('.drawBox-carousel').slick({
+    $('.drawingsBox-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.draw-carousel'
+        asNavFor: '.drawings-carousel'
     });
-    $('.draw-carousel').slick({
+    $('.drawings-carousel').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.drawBox-carousel',
+        asNavFor: '.drawingsBox-carousel',
         dots: false,
         centerMode: true,
         focusOnSelect: true
