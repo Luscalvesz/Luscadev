@@ -36,9 +36,9 @@ function carousel(){
 };
 
 
-
 $(document).ready( function(){
-
+    
+    AOS.init();
     carousel();
 
 });
